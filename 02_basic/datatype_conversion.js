@@ -27,3 +27,6 @@ console.log(changeNum);
 
 // 99 => 99
 // string => number => nun
+
+// postfix => x++ first return value then incerement 
+// prefix => ++x first increment then return value.
