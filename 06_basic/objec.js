@@ -77,6 +77,17 @@ const users =[
     }, 
 ]
 
+// use a key and value array form data
+console.log(Object.keys(users));
+console.log(Object.values(users));
+
+// use a map to show or console.log
 users.map((helo)=>{
     console.log(`Name:${helo.name},ID: ${helo.id}`);
 })
+
+// check a value exiest karti hai ki nahi 
+
+console.log(users.hasOwnProperty('isLoggendIn')); // false to show ki value nahi hai 
+
+// 
