@@ -7,14 +7,25 @@ const arr = [1,5,3,2,4];
 // }
 
 for (const num of arr){
-    // console.log(num);
+    console.log(num);
 }
 
 // second loop
 const greetings ="Hello";
 for (const greet of greetings){
-    // console.log(`Each char is ${greet}`)
+    console.log(`Each char is ${greet}`)
 }
+
+// if you found a space then brack 
+const gretings = "Hello Programmer";
+for (const greet of gretings) {
+    console.log(`Each char is ${greet}`) 
+    if (greet === ' ') {
+        console.log("Space found!");
+        break; // Exit the loop after finding the first space
+    }
+}
+
 
 
 // map
@@ -29,3 +40,10 @@ map.set('FR',"France")
 map.set('In', "India")  /** same */
 
 console.log(map);
+// second way to given output
+// you can console key and vlaue with any symbole to use
+for (const[key , value] of map){
+    console.log(key , '=>', value);
+}
+
+
